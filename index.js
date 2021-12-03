@@ -14,7 +14,7 @@ const port = process.env.PORT || 5000
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-const URI = process.env.MONGODBURI 
+const URI = process.env.URI 
 
 mongoose.connect(URI, { useNewUrlParser: true , useUnifiedTopology: true })
 
