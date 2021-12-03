@@ -14,7 +14,7 @@ const port = process.env.PORT || 5000
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-mongoose.connect('mongodb://localhost:27017/Exam', { useNewUrlParser: true , useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://Abdelhakim_Jebabra:JYc73lnFuEhp1lUA@newgen-cluster.uocci.mongodb.net/mySecondDatabase?retryWrites=true&w=majority', { useNewUrlParser: true , useUnifiedTopology: true })
 
 
 
